@@ -1,0 +1,67 @@
+div h3 {
+  color: #0033cc;
+}
+
+i {
+  font-size: 2rem;
+}
+/* grid container */
+.grid-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 15px;
+  background-color: #0000ff;
+  border: 15px solid #0000ff;
+}
+/* bg */
+.bg-col {
+  background-color: #eeeeee;
+  /* border: 10px solid #0000ff; */
+}
+/* box display */
+.box-card {
+  margin: 10px;
+  padding-bottom: 50px;
+}
+.box-content {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+.box-main,
+.box-main-timeline {
+  display: inline-block;
+  width: 80%;
+}
+
+/* timeline */
+.box-timeline {
+  grid-row: 1/3;
+  grid-column: 3/4;
+}
+.number-timeline {
+  border-radius: 50%;
+  background-color: #9933ff;
+  width: 50px;
+  color: white;
+  height: 50px;
+  position: relative;
+  border: 1px solid black;
+}
+.number-timeline h4 {
+  font-family: "Times New Roman", Times, serif;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.timeline {
+  padding-top: 25px;
+}
+.box-main-timeline {
+  border-bottom: 1px dashed rgb(0, 174, 255);
+}
+/* Scopes */
+.inout {
+  width: 40%;
+}

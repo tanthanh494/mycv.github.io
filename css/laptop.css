@@ -1,0 +1,443 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+/* container */
+section > .container {
+  width: 1170px;
+  margin: auto;
+  display: block;
+
+  padding: 30px 50px;
+}
+/* tạo layout cho các liên kết */
+nav.container {
+  justify-content: center;
+
+  display: flex;
+  padding: 0;
+}
+/* tạo khoảng cách cho các liên kết */
+.container a {
+  padding: 20px;
+  border: 1px solid #9796967b;
+}
+.container a:link {
+  text-decoration: none;
+  color: black;
+}
+/* Thông tin cá nhân */
+div.container1 {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 20px;
+  width: 100%;
+}
+div.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  justify-content: center;
+  gap: 30px;
+}
+
+.container3 {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+.container-img {
+  display: grid;
+  grid-template-columns: 350px 350px 350px;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* banner */
+#banner {
+  color: white;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  padding: 0 50px !important;
+}
+/* tạo ra một nền màu xám trên ảnh */
+.banner::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 350px;
+  background-color: #2d2c2c8c;
+  z-index: 1;
+  position: absolute;
+}
+/* tạo position cho ảnh  */
+.banner {
+  position: relative;
+}
+/* tạo tên chèn lên ảnh */
+.name-banner {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+
+  top: 20%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  gap: 5px;
+}
+.span-banner {
+  justify-self: center;
+  font-size: 10px;
+  color: #f7f7f799;
+}
+.name {
+  font-weight: 300;
+}
+/* navbar */
+#nav-bar {
+  text-align: center;
+  position: relative;
+}
+a {
+  color: black;
+}
+/* display for #target and #personal-info */
+div #target {
+  flex: 50% 0 0;
+  padding: 20px 40px 40px 40px;
+  background-color: #f7f7f7;
+}
+div #personal-info {
+  padding-left: 30px;
+  background-color: #e4e0e0;
+  margin: 0 !important;
+  padding-top: 20px;
+}
+
+/* tạo avatar */
+.avatar {
+  position: absolute;
+  border-radius: 50%;
+  border: 5px solid white;
+  width: 150px;
+  height: 150px;
+  top: -45px;
+  z-index: 5;
+}
+
+/* tạo thông tin lý lịch cùng hàng với các liên kết */
+div.nav {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  justify-content: center;
+  padding: 0 100px;
+  border: 1px solid #9796967b;
+}
+
+.span-nav {
+  justify-self: center;
+  font-size: 10px;
+  color: #61616199;
+}
+
+/* tạo màu sắc cho icon */
+a i {
+  color: #3399ff;
+}
+
+/* input email */
+/* ẩn text */
+.hidden-info {
+  display: none;
+}
+.view-click {
+  padding-top: 15px;
+}
+/* display cho thông báo yêu cầu */
+.ctn-info {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mt-40 {
+  list-style-type: none;
+  padding: 0;
+}
+ul.info span {
+  font-weight: bold;
+}
+.section-title {
+  padding: 30px 0;
+  font-family: sans-serif;
+  font-weight: 200;
+  grid-column: 1 / span 3;
+}
+
+#about {
+  padding: 0 30px;
+  background-color: white;
+}
+
+/* tạo layout cho phan kinh nghiem */
+.box-skill {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+/* icon */
+.icon-1 {
+  padding: 20px 0 40px 0;
+  color: #3399ff;
+}
+.ic-toolbox {
+  justify-self: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+.ic-pencil {
+  justify-self: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+.ic-mic {
+  justify-self: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+.ic-telescope {
+  justify-self: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+.ic-tools-2 {
+  justify-self: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+.ic-megaphone {
+  font-size: 20px;
+  color: #3399ff;
+}
+.ic-strategy {
+  font-size: 20px;
+  color: #3399ff;
+}
+.ic-hotairballoon {
+  font-size: 20px;
+  color: #3399ff;
+}
+.ic-basket {
+  font-size: 20px;
+  color: #3399ff;
+}
+.icon-user-1 {
+  margin-right: 15px;
+}
+.icon-lamp {
+  margin-right: 15px;
+}
+.icon-facebook-circled {
+  color: #3399ff;
+  font-size: 30px;
+}
+.icon-linkedin-circled {
+  color: #3399ff;
+  font-size: 30px;
+}
+.icon-github-circled {
+  color: #3399ff;
+  font-size: 30px;
+}
+/* màu nền */
+.span-color {
+  background-color: #3399ff;
+  color: white;
+  padding: 2px;
+  font-family: sans-serif;
+  border-radius: 5px;
+}
+.time-color {
+  border-radius: 50%/100%;
+  color: white;
+  background-color: #3399ff;
+  padding: 5px 10px;
+}
+/* tạo border */
+.border-info {
+  border: 1px solid #61616199;
+  padding: 30px;
+  font-family: sans-serif;
+  align-self: start;
+}
+.border-info-2 {
+  border: 1px solid #61616199;
+
+  font-family: sans-serif;
+}
+/*  tạo hiệu ứng cho thẻ <li>*/
+li.point {
+  position: relative;
+  padding-left: 0;
+  list-style: none;
+}
+
+li.point::before {
+  content: "";
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+
+  background-color: #3399ff;
+  position: absolute;
+  top: 3px;
+  left: -35px;
+}
+
+/* tạo khoảng cách cho các item*/
+.space-skill {
+  margin-bottom: 30px;
+}
+.space-info {
+  margin: 40px 0;
+  color: #474646a7;
+}
+.space-time {
+  margin: 15px 0;
+}
+.lg-skill {
+  margin-bottom: 30px;
+}
+.project-padding {
+  padding: 20px;
+}
+/* màu sắc cho chữ */
+.color-ex {
+  color: black;
+}
+/* định dạng layout cho phần sở thích */
+.hobby {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.circle {
+  border-radius: 50%;
+  border: 1px solid #3399ff;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.name-hobby {
+  display: flex;
+  justify-content: space-evenly;
+  color: #61616199;
+  font-size: 10px;
+  margin-top: 10px;
+}
+/* tạo hiệu ứng cho thanh kinh nghiệm */
+.span-ex-1 {
+  background: #199cdb;
+  display: inline-block;
+  height: 3px;
+  margin-right: 10px;
+  width: 45px;
+}
+.span-ex-2 {
+  background: #61616199;
+  display: inline-block;
+  height: 3px;
+  margin-right: 10px;
+  width: 45px;
+}
+
+/* tạo layout cho các hộp chứa */
+.box-cer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.box-cer-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  grid-column: 1/-1;
+}
+.box-cer-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 30px 0;
+}
+.grid-cer {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  gap: 1px;
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  justify-content: space-between;
+}
+.project-flex-ic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* định dạng cho chữ */
+div.grid-cer p {
+  font-family: sans-serif;
+}
+.color-cer {
+  color: #61616199;
+  font-size: 15px;
+}
+/* border cho phần chứng chỉ,giải thưởng */
+.border-cer {
+  border-left: 2px solid #d6c08d;
+  padding-left: 20px;
+}
+
+/* .hr {
+  border: 1px solid #d6c08d;
+} */
+.box-cer-2:first-child {
+  border-bottom: 1px solid #d6c08d;
+}
+
+/* định dạng cho footer */
+
+ul.inline li {
+  display: inline-block;
+  margin: 0 20px;
+}
+.size-img {
+  max-width: auto;
+  height: auto;
+}
+
+/* box skill */
+.toggle-more,
+.toggle-less {
+  border-radius: 20%;
+  width: 150px;
+  border: none;
+  background-color: #e5dac0;
+}
+.hidden {
+  visibility: hidden;
+}
+
+.box-skill h1 {
+  font-size: 2rem;
+}

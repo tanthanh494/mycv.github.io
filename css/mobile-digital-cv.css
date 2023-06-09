@@ -1,0 +1,27 @@
+@media (max-width: 576px) {
+  /* display grid */
+  .grid-row {
+    grid-template-columns: 1fr;
+  }
+  /* display time line */
+  .box-timeline {
+    grid-row: 5/6;
+    grid-column: 1/2;
+  }
+  /* display scopes */
+  .col-scopes {
+    grid-row: 2/3;
+  }
+  /* display content */
+  .box-content,
+  .box-main {
+    display: block;
+    width: 100%;
+  }
+  /* icon */
+  i {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

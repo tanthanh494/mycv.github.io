@@ -1,0 +1,113 @@
+/* display khi màn hình từ 1000px-1200px */
+@media (min-width: 1000px) and (max-width: 1200px) {
+  /* font-size */
+  .box-skill h1 {
+    font-size: 1.7rem;
+  }
+}
+/* display khi màn hình 580px -1130px */
+@media (min-width: 686px) and (max-width: 1130px) {
+  /* container */
+  .container {
+    max-width: 720px;
+  }
+  div.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .container-img {
+    display: grid;
+    grid-template-columns: 230px 230px 230px;
+    justify-content: center;
+    gap: 30px;
+  }
+  #certificate .container {
+    max-width: 1120px;
+    width: 100%;
+  }
+  .size-img {
+    width: auto;
+    height: auto;
+  }
+  /* nav */
+  div.nav {
+    padding: 0 30px;
+  }
+  .span-nav,
+  .avatar {
+    display: none;
+  }
+  /* display certificate */
+  .grid-cer {
+    grid-template-columns: 1fr;
+    /* gap: 40px; */
+    justify-items: center;
+    /* border-bottom: 1px solid #d6c08d; */
+    width: 100%;
+    max-width: 400px;
+  }
+  .grid-cer img {
+    width: 100%;
+  }
+  .grid-cer div {
+    justify-self: start;
+  }
+  .grid-cer div .color-cer p {
+    margin: 0;
+  }
+  .box-cer-2:nth-child(2) {
+    padding-top: 50px;
+  }
+
+  /* font-size */
+  #target .section-title,
+  #personal-info .section-title {
+    font-size: 1.7rem;
+  }
+}
+
+/* display khi 686px-800px */
+@media (min-width: 686px) and (max-width: 800px) {
+  /* container */
+  .container-img {
+    display: grid;
+    grid-template-columns: 193px 193px 193px;
+    justify-content: center;
+    gap: 30px;
+  }
+  /* display project  */
+  .project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    font-size: 1rem;
+  }
+  /* font-size */
+  #target .section-title,
+  #personal-info .section-title {
+    font-size: 1.5rem;
+  }
+}
+
+/* display khi 686px-1130px */
+@media (min-width: 686px) and (max-width: 1130px) {
+  /* project-icon */
+  .project-flex-ic {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    column-gap: 20px;
+  }
+  .project-flex-ic div:nth-child(3) {
+    grid-column: 2/3;
+  }
+  .project-padding {
+    padding: 10px;
+  }
+  /*  display certificate*/
+  .grid-cer div {
+    width: 70%;
+  }
+}
